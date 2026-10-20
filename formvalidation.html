@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="JengaFund is a fictional Kenyan chama registration portal built for a web development portfolio project.">
+
+    <title>JengaFund | Chama Registration</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#" class="logo" aria-label="JengaFund home">
+                <span class="logo-icon">J</span>
+                <span>Jenga<span class="logo-highlight">Fund</span></span>
+            </a>
+
+            <span class="header-badge">KENYA 🇰🇪</span>
+
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <section class="intro-section">
+            <span class="eyebrow">BUILD YOUR FINANCIAL FUTURE</span>
+
+            <h1>Join JengaFund</h1>
+
+            <p>
+                Take the first step towards financial growth.
+                Register with our fictional chama community and
+                start building a better financial future.
+            </p>
+
+            <div class="security-note">
+                <span aria-hidden="true">🔒</span>
+                <span>
+                    Portfolio demonstration only. Do not enter real
+                    personal information.
+                </span>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-heading">
+
+            <div class="form-header">
+                <div>
+                    <h2 id="form-heading">Membership Registration</h2>
+
+                    <p>Complete the form below to register.</p>
+                </div>
+
+                <span class="required-note">
+                    * Required fields
+                </span>
+            </div>
+
+            <form id="registration-form" novalidate>
+
+                <!-- PERSONAL INFORMATION -->
+
+                <fieldset class="form-section">
+
+                    <legend>
+                        <span class="section-number">01</span>
+                        Personal Information
+                    </legend>
+
+                    <p class="section-description">
+                        Tell us a little about yourself.
+                    </p>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+                            <label for="full-name">
+                                Full Name <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="fullName"
+                                placeholder="e.g. Amina Wanjiku"
+                                autocomplete="name"
+                                required
+                                aria-describedby="full-name-error"
+                            >
+
+                            <small
+                                class="error-message"
+                                id="full-name-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="amina@example.com"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-error"
+                            >
+
+                            <small
+                                class="error-message"
+                                id="email-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                Kenyan Phone Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="0712345678"
+                                autocomplete="tel"
+                                required
+                                aria-describedby="phone-hint phone-error"
+                            >
+
+                            <small class="field-hint" id="phone-hint">
+                                Use a Kenyan mobile number, e.g. 0712345678
+                                or +254712345678.
+                            </small>
+
+                            <small
+                                class="error-message"
+                                id="phone-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="national-id">
+                                National ID Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="national-id"
+                                name="nationalId"
+                                placeholder="Enter your ID number"
+                                inputmode="numeric"
+                                autocomplete="off"
+                                required
+                                aria-describedby="national-id-error"
+                            >
+
+                            <small
+                                class="error-message"
+                                id="national-id-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="county">
+                                County of Residence <span>*</span>
+                            </label>
+
+                            <select
+                                id="county"
+                                name="county"
+                                required
+                                aria-describedby="county-error"
+                            >
+                                <option value="">Select your county</option>
+                                <option value="baringo">Baringo</option>
+                                <option value="bomet">Bomet</option>
+                                <option value="bungoma">Bungoma</option>
+                                <option value="busia">Busia</option>
+                                <option value="elgeyo-marakwet">Elgeyo-Marakwet</option>
+                                <option value="embu">Embu</option>
+                                <option value="garissa">Garissa</option>
+                                <option value="homa-bay">Homa Bay</option>
+                                <option value="isiolo">Isiolo</option>
+                                <option value="kajiado">Kajiado</option>
+                                <option value="kakamega">Kakamega</option>
+                                <option value="kericho">Kericho</option>
+                                <option value="kiambu">Kiambu</option>
+                                <option value="kilifi">Kilifi</option>
+                                <option value="kirinyaga">Kirinyaga</option>
+                                <option value="kisii">Kisii</option>
+                                <option value="kisumu">Kisumu</option>
+                                <option value="kitui">Kitui</option>
+                                <option value="kwale">Kwale</option>
+                                <option value="laikipia">Laikipia</option>
+                                <option value="lamu">Lamu</option>
+                                <option value="machakos">Machakos</option>
+                                <option value="makueni">Makueni</option>
+                                <option value="mandera">Mandera</option>
+                                <option value="marsabit">Marsabit</option>
+                                <option value="meru">Meru</option>
+                                <option value="migori">Migori</option>
+                                <option value="mombasa">Mombasa</option>
+                                <option value="muranga">Murang'a</option>
+                                <option value="nairobi">Nairobi</option>
+                                <option value="nakuru">Nakuru</option>
+                                <option value="nandi">Nandi</option>
+                                <option value="narok">Narok</option>
+                                <option value="nyamira">Nyamira</option>
+                                <option value="nyandarua">Nyandarua</option>
+                                <option value="nyeri">Nyeri</option>
+                                <option value="samburu">Samburu</option>
+                                <option value="siaya">Siaya</option>
+                                <option value="taita-taveta">Taita-Taveta</option>
+                                <option value="tana-river">Tana River</option>
+                                <option value="tharaka-nithi">Tharaka-Nithi</option>
+                                <option value="trans-nzoia">Trans Nzoia</option>
+                                <option value="turkana">Turkana</option>
+                                <option value="uasin-gishu">Uasin Gishu</option>
+                                <option value="vihiga">Vihiga</option>
+                                <option value="wajir">Wajir</option>
+                                <option value="west-pokot">West Pokot</option>
+                            </select>
+
+                            <small
+                                class="error-message"
+                                id="county-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-of-birth">
+                                Date of Birth <span>*</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date-of-birth"
+                                name="dateOfBirth"
+                                autocomplete="bday"
+                                required
+                                aria-describedby="date-of-birth-hint date-of-birth-error"
+                            >
+
+                            <small
+                                class="field-hint"
+                                id="date-of-birth-hint"
+                            >
+                                Membership is restricted to adults aged 18 and above.
+                            </small>
+
+                            <small
+                                class="error-message"
+                                id="date-of-birth-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ACCOUNT SECURITY -->
+
+                <fieldset class="form-section">
+
+                    <legend>
+                        <span class="section-number">02</span>
+                        Account Security
+                    </legend>
+
+                    <p class="section-description">
+                        Create secure login credentials.
+                    </p>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="password">
+                                Password <span>*</span>
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Create a strong password"
+                                    autocomplete="new-password"
+                                    required
+                                    aria-describedby="password-hint password-error"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="password"
+                                    aria-label="Show password"
+                                    aria-pressed="false"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small class="field-hint" id="password-hint">
+                                Minimum 8 characters, including uppercase,
+                                lowercase and a number.
+                            </small>
+
+                            <small
+                                class="error-message"
+                                id="password-error"
+                                aria-live="polite"
+                            ></small>
+
+                        </div>
+
+                        <div class="form-group full-width">
+
+                            <label for="confirm-password">
+                                Confirm Password <span>*</span>
+                            </label>
+
+                            <div class="password-wrapper">
+
+                                <input
+                                    type="password"
+                                    id="confirm-password"
+                                    name="confirmPassword"
+                                    placeholder="Enter your password again"
+                                    autocomplete="new-password"
+                                    required
+                                    aria-describedby="confirm-password-error"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="confirm-password"
+                                    aria-label="Show confirmation password"
+                                    aria-pressed="false"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="confirm-password-error"
+                                aria-live="polite"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- MEMBERSHIP INFORMATION -->
+
+                <fieldset class="form-section">
+
+                    <legend>
+                        <span class="section-number">03</span>
+                        Membership Information
+                    </legend>
+
+                    <p class="section-description">
+                        Tell us how you plan to participate in the chama.
+                    </p>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="employment-status">
+                                Employment Status <span>*</span>
+                            </label>
+
+                            <select
+                                id="employment-status"
+                                name="employmentStatus"
+                                required
+                                aria-describedby="employment-status-error"
+                            >
+                                <option value="">Select your status</option>
+                                <option value="employed">Employed</option>
+                                <option value="self-employed">Self-employed</option>
+                                <option value="business-owner">Business owner</option>
+                                <option value="student">Student</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <small
+                                class="error-message"
+                                id="employment-status-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contribution-frequency">
+                                Contribution Frequency <span>*</span>
+                            </label>
+
+                            <select
+                                id="contribution-frequency"
+                                name="contributionFrequency"
+                                required
+                                aria-describedby="contribution-frequency-error"
+                            >
+                                <option value="">Select frequency</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+
+                            <small
+                                class="error-message"
+                                id="contribution-frequency-error"
+                                aria-live="polite"
+                            ></small>
+                        </div>
+
+                        <div class="form-group full-width">
+
+                            <label for="monthly-savings">
+                                Monthly Savings Commitment (KES) <span>*</span>
+                            </label>
+
+                            <div class="currency-input">
+
+                                <span class="currency-prefix">KES</span>
+
+                                <input
+                                    type="number"
+                                    id="monthly-savings"
+                                    name="monthlySavings"
+                                    placeholder="5000"
+                                    min="500"
+                                    max="100000"
+                                    step="1"
+                                    required
+                                    aria-describedby="monthly-savings-hint monthly-savings-error"
+                                >
+
+                            </div>
+
+                            <small
+                                class="field-hint"
+                                id="monthly-savings-hint"
+                            >
+                                Enter an amount between KES 500 and KES 100,000
+                                per month.
+                            </small>
+
+                            <small
+                                class="error-message"
+                                id="monthly-savings-error"
+                                aria-live="polite"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- TERMS AND CONDITIONS -->
+
+                <fieldset class="form-section terms-section">
+
+                    <legend>
+                        <span class="section-number">04</span>
+                        Final Step
+                    </legend>
+
+                    <div class="checkbox-group">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                            aria-describedby="terms-error"
+                        >
+
+                        <label for="terms">
+                            I have read and agree to the
+                            <a href="#terms-notice">Terms and Conditions</a>
+                            and acknowledge that this is a fictional
+                            portfolio demonstration. <span>*</span>
+                        </label>
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="terms-error"
+                        aria-live="polite"
+                    ></small>
+
+                    <div class="terms-notice" id="terms-notice">
+                        <strong>Demonstration notice</strong>
+
+                        <p>
+                            JengaFund is a fictional project. This form does
+                            not create a real membership, open an account,
+                            or process financial transactions.
+                        </p>
+                    </div>
+
+                </fieldset>
+
+                <!-- FORM FEEDBACK -->
+
+                <div
+                    class="form-feedback"
+                    id="form-feedback"
+                    role="status"
+                    aria-live="polite"
+                    tabindex="-1"
+                ></div>
+
+                <!-- SUBMISSION -->
+
+                <div class="form-actions">
+
+                    <p class="privacy-note">
+                        Your information should be fictional when testing
+                        this portfolio project.
+                    </p>
+
+                    <button type="submit" class="submit-button">
+                        Create Membership
+                        <span aria-hidden="true">→</span>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <footer class="site-footer">
+            <p>
+                © 2026 JengaFund.
+                Built for learning and portfolio demonstration.
+            </p>
+
+            <p>
+                Not a real financial institution.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript validation will be implemented in script.js. -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
